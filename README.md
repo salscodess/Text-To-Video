@@ -1,6 +1,11 @@
 # salscodess.github.io
 
-uses stock vidoes and photos to find and make a long form video of your prompt
+uses stock vidoes and photos to find and make a long form video of your prompt. 
+Runs on local host to create short or long form videos from just text with a pexels api
+(Take the free api its in the code) its not mine
+If you even find this make a pull request for suggestions
+
+-Salscodess
 
  Required Packages:
   | 
