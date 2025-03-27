@@ -98,8 +98,7 @@
             try {
                 const response = await fetch(`https://api.pexels.com/videos/search?query=${encodeURIComponent(query)}`, {
                     headers: {
-                        Authorization: 'mPGRiwahlRDNvW42u23NQIIKHZEmtB5W7|dgCGcNWUXvzQOYaUvdbPYJ' // Replace with your actual Pexels API Key
-                    }
+                        Authorization: 'mPGRiwahlRDNvW42u23NQIIKHZEmtB5W7|dgCGcNWUXvzQOYaUvdbPYJ'
                 });
 
                 if (!response.ok) {
@@ -107,7 +106,7 @@
                 }
 
                 const data = await response.json();
-                const videoLinks = data.videos.map(video => video.video_files[0].link); // Adjust to select desired video file
+                const videoLinks = data.videos.map(video => video.video_files[0].link);
                 return videoLinks;
             } catch (error) {
                 console.error('Error fetching videos:', error);
@@ -119,7 +118,6 @@
         function displayVideos(videoUrls, providedText) {
             videoContainer.innerHTML = ''; // Clear previous videos
             videoUrls.forEach(url => {
-                // Create a wrapper div for the video and text overlay
                 const wrapper = document.createElement('div');
                 wrapper.classList.add('video-wrapper');
 
