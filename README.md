@@ -8,16 +8,16 @@ If you even find this make a pull request for suggestions
 -Salscodess
 
  Required Packages:
-  | 
-  |- Node.Js
-  | |- # Download and install fnm:
-  | | winget install Schniz.fnm
-  | | # Download and install Node.js:
-  | | fnm install 23
-  | | # Verify the Node.js version:
-  | | node -v # Should print "v23.10.0".
-  | | # Verify npm version:
-  | | npm -v # Should print "10.9.2".
+    
+Node.Js
+# Download and install fnm:
+winget install Schniz.fnm
+# Download and install Node.js:
+fnm install 23
+# Verify the Node.js version:
+node -v # Should print "v23.10.0".
+# Verify npm version:
+npm -v # Should print "10.9.2".
   ___
 
   How to Run:
